@@ -1,0 +1,16 @@
+body {
+	color: #00ff66;
+	background-color: black;
+	font-family: 'Space Mono', monospace;
+}
+
+h1{
+	font-size: 30px;
+	font-style: italic;
+}
+
+.header{
+
+text-align: center;
+
+}
