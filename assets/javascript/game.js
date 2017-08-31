@@ -10,8 +10,9 @@ document.onkeyup = function (event) {
 
 	if (game === 10){
 		var html = 
-			"Thank you for participating in Psyonicx Incorporated's Latent Psychic Search!"
+			"Thank you for participating in Psyonicx Incorporated's Latent Psychic Search!  Please wait 30 minutes to an hour for the effects of PSYUPS (tm) to fully wear off before leaving this isolation chamber.</p><p>If you are feeling strong enough, press any letter key to try another 10 rounds."
        	document.querySelector("#game").innerHTML = html;
+       	game = 0
 
 	}
 
@@ -28,7 +29,7 @@ document.onkeyup = function (event) {
 			win += 1;
 			game +=1		
 			var html = 
-				"<p>Correct! Please try to remember any relevant details about your current mindstate and report them once the test is complete.</p><p>Wins: " + win + "</p><p>Total rounds: " + game + "</p>" 
+				"<p>Correct! Please try to remember any relevant details about your current mindstate and report them once the test is complete.</p><p>Wins: " + win + "</p><p>Total Rounds: " + game + "/10</p>" 
         	document.querySelector("#game").innerHTML = html;
         	compGuess = compChoice[Math.floor(Math.random() * compChoice.length)];
         	console.log (compGuess)
@@ -36,7 +37,7 @@ document.onkeyup = function (event) {
 		else {
 			attempt -= 1;
 			var html = 
-				"<p>Attemps left this round: " + attempt + "</p><p>Wins: " + win + "</p><p>Total rounds: " + game + "</p>" 
+				"<br><p>Attemps left this round: " + attempt + "</p><p>Wins: " + win + "</p><p>Total Rounds: " + game + "/10</p>" 
         	document.querySelector("#game").innerHTML = html;
 		}
 
@@ -46,7 +47,7 @@ document.onkeyup = function (event) {
 		game +=1
 		attempt = 6
 		var html =
-			"<p>Remember, a wrong answer is not a bad answer!  All data we collect is useful!</p><p>Wins: " + win + "</p><p>Total rounds: " + game + "</p><p>Press any key to begin the next round!</p>" 
+			"<p>Remember, a wrong answer is not a bad answer!  All data we collect is useful!</p><p>Attempts left this round 0</p><p>Wins: " + win + "</p><p>Total Rounds: " + game + "/10</p><p>Press any key to begin the next round!</p>" 
        	document.querySelector("#game").innerHTML = html;
        	compGuess = compChoice[Math.floor(Math.random() * compChoice.length)];
        	console.log (compGuess)
