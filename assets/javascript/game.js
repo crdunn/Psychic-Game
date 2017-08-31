@@ -37,7 +37,7 @@ document.onkeyup = function (event) {
 		else {
 			attempt -= 1;
 			var html = 
-				"<br><p>Attemps left this round: " + attempt + "</p><p>Wins: " + win + "</p><p>Total Rounds: " + game + "/10</p>" 
+				"<br><p>Attempts left this round: " + attempt + "</p><p>Wins: " + win + "</p><p>Total Rounds: " + game + "/10</p>" 
         	document.querySelector("#game").innerHTML = html;
 		}
 
