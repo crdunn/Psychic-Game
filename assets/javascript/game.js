@@ -10,7 +10,7 @@ document.onkeyup = function (event) {
 
 	if (game === 10){
 		var html = 
-			"Thank you for participating in Psyonicx Incorporated's Latent Psychic Search!  Please wait 30 minutes to an hour for the effects of PSYUPS (tm) to fully wear off before leaving this isolation chamber.</p><p>If you are feeling strong enough, press any letter key to try another 10 rounds."
+			"Thank you for participating in PsyFuture Incorporated's Latent Psychic Search!  Please wait 30 minutes to an hour for the effects of PSYUPS (tm) to fully wear off before leaving this isolation chamber.</p><p>If you are feeling strong enough, press any letter key to try another 10 rounds."
        	document.querySelector("#game").innerHTML = html;
        	game = 0
 
